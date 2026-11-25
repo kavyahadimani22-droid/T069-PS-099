@@ -1,0 +1,4 @@
+# Zero mandatory third-party dependencies: core engine, CLI, SQLite persistence,
+# tests (unittest), and the interactive Web Dashboard all run on Python 3.10+ stdlib.
+# pytest is optional if you prefer running tests via `python -m pytest`.
+pytest>=7.0.0
