@@ -1,0 +1,12 @@
+{"op":"REGISTER_SHIPPER","id":"SHP-DEMO","name":"Demo Steel Works","gst_registered":true}
+{"op":"REGISTER_CARRIER","id":"CAR-DEMO","name":"Deccan Express","rating":4.5,"second_driver":true}
+{"op":"REGISTER_TRUCK","id":"TRK-DEMO","carrier_id":"CAR-DEMO","truck_type":"22FT","capacity_tonnes":15,"length_ft":22,"city":"Bengaluru","hours_used":2,"haz_certified":true}
+{"op":"POST_LOAD","id":"LD-DEMO","shipper_id":"SHP-DEMO","origin":"Bengaluru","destination":"Mumbai","weight_tonnes":12,"truck_type":"22FT","pickup_start":0,"pickup_end":480,"material":"GENERAL","length_ft":20}
+{"op":"MATCH"}
+{"op":"ACCEPT","load_id":"LD-DEMO"}
+{"op":"COUNTER","trip_id":"TRIP-LD-DEMO","amount":32928}
+{"op":"EVENT","trip_id":"TRIP-LD-DEMO","event":"AT_PICKUP"}
+{"op":"EVENT","trip_id":"TRIP-LD-DEMO","event":"LOADED"}
+{"op":"EVENT","trip_id":"TRIP-LD-DEMO","event":"IN_TRANSIT"}
+{"op":"EVENT","trip_id":"TRIP-LD-DEMO","event":"DELIVERED","data":{"late_hours":0}}
+{"op":"EVENT","trip_id":"TRIP-LD-DEMO","event":"SETTLE","data":{"toll_actual":1400,"pickup_detention_hours":8,"delivery_detention_hours":4}}

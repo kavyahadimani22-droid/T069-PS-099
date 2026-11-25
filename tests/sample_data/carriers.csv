@@ -1,0 +1,6 @@
+id,name,rating,annual_payout,second_driver,active
+CAR-001,SouthLine Logistics,4.6,0,true,true
+CAR-002,Rapid Freight,4.2,98000,false,true
+CAR-003,Budget Carriers,3.7,12000,true,true
+CAR-004,Low Rated Transport,2.8,0,true,true
+CAR-005,Metro Hazmat Movers,4.8,45000,true,true

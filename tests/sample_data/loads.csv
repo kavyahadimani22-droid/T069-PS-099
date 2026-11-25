@@ -1,0 +1,12 @@
+id,shipper_id,origin,destination,weight_tonnes,truck_type,pickup_start,pickup_end,material,length_ft,extra_stops
+LD-001,SHP-001,Bengaluru,Chennai,6,17FT,60,480,GENERAL,14,0
+LD-002,SHP-002,Mumbai,Pune,2,LCV,60,300,PERISHABLE,9,0
+LD-003,SHP-003,Bengaluru,Delhi,20,32FT_MXL,60,600,HAZARDOUS,28,0
+LD-004,SHP-001,Mumbai,Bengaluru,12,22FT,60,540,GENERAL,20,0
+LD-005,SHP-002,Bengaluru,Mysuru,2,LCV,60,360,GENERAL,9,0
+LD-006,SHP-004,Pune,Hyderabad,28,TRAILER,60,600,OVERSIZE,36,0
+LD-007,SHP-001,Bengaluru,Hyderabad,6,17FT,60,480,GENERAL,14,0
+LD-008,SHP-003,Chennai,Coimbatore,5,17FT,60,480,GENERAL,15,0
+LD-009,SHP-001,Chennai,Bengaluru,5,17FT,120,600,GENERAL,14,0
+LD-010,SHP-002,Chennai,Bengaluru,5,17FT,120,600,GENERAL,14,0
+LD-011,SHP-004,Chennai,Bengaluru,5,17FT,120,600,GENERAL,14,0

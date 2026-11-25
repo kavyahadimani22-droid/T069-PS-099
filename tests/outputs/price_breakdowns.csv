@@ -1,0 +1,12 @@
+load_id,shipper_id,origin,destination,truck_type,material,distance_km,chargeable_km,rate_per_km,base_price,open_loads,available_trucks_200km,demand_supply_ratio,surge_pct,return_load_count,return_load_pct,backhaul_poor_pct,material_pct,fuel_index_pct,extra_stops,multi_drop_fee,total_adjustment_pct,recommended_price,open
+LD-001,SHP-001,Bengaluru,Chennai,17FT,GENERAL,350,350,24,8400,2,3,0.67,0,3,-8.00,0,0,0,0,0,-8.00,7728,False
+LD-002,SHP-002,Mumbai,Pune,LCV,PERISHABLE,150,150,18,2700,1,1,1.00,0,0,0,0,10.00,0,0,0,10.00,2970,False
+LD-003,SHP-003,Bengaluru,Delhi,32FT_MXL,HAZARDOUS,2150,2150,45,96750,1,1,1.00,0,0,0,12.00,15.00,0,0,0,27.00,122873,False
+LD-004,SHP-001,Mumbai,Bengaluru,22FT,GENERAL,980,980,32,31360,1,2,0.50,0,0,0,0,0,0,0,0,0,31360,False
+LD-005,SHP-002,Bengaluru,Mysuru,LCV,GENERAL,145,150,18,2700,1,1,1.00,0,0,0,0,0,0,0,0,0,2700,True
+LD-006,SHP-004,Pune,Hyderabad,TRAILER,OVERSIZE,560,560,60,33600,1,1,1.00,0,0,0,0,0,0,0,0,0,33600,False
+LD-007,SHP-001,Bengaluru,Hyderabad,17FT,GENERAL,570,570,24,13680,2,3,0.67,0,0,0,0,0,0,0,0,0,13680,True
+LD-008,SHP-003,Chennai,Coimbatore,17FT,GENERAL,500,500,24,12000,4,1,4.00,20.00,0,0,12.00,0,0,0,0,32.00,15840,False
+LD-009,SHP-001,Chennai,Bengaluru,17FT,GENERAL,350,350,24,8400,4,1,4.00,20.00,1,0,0,0,0,0,0,20.00,10080,True
+LD-010,SHP-002,Chennai,Bengaluru,17FT,GENERAL,350,350,24,8400,4,1,4.00,20.00,1,0,0,0,0,0,0,20.00,10080,True
+LD-011,SHP-004,Chennai,Bengaluru,17FT,GENERAL,350,350,24,8400,4,1,4.00,20.00,1,0,0,0,0,0,0,20.00,10080,True

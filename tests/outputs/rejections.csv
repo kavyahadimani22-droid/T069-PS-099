@@ -1,0 +1,108 @@
+cycle_minute,load_id,truck_id,reasons
+0,LD-001,TRK-003,more than 150 km from origin
+0,LD-001,TRK-004,rating below 3.0
+0,LD-001,TRK-005,truck type
+0,LD-001,TRK-006,capacity; truck type
+0,LD-001,TRK-007,more than 150 km from origin
+0,LD-001,TRK-008,more than 150 km from origin
+0,LD-001,TRK-009,truck type; more than 150 km from origin
+0,LD-001,TRK-010,trip would breach 14-hour daily limit
+0,LD-001,TRK-011,capacity; truck type; more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer
+0,LD-002,TRK-001,more than 150 km from origin
+0,LD-002,TRK-002,truck type; unknown truck-origin distance
+0,LD-002,TRK-003,unknown truck-origin distance
+0,LD-002,TRK-004,rating below 3.0; more than 150 km from origin
+0,LD-002,TRK-005,truck type; more than 150 km from origin
+0,LD-002,TRK-006,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer
+0,LD-002,TRK-007,truck type
+0,LD-002,TRK-008,truck type
+0,LD-002,TRK-009,truck type
+0,LD-002,TRK-010,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-003,TRK-001,capacity; truck type
+0,LD-003,TRK-002,capacity; truck type; HAZ certification; trip would breach 14-hour daily limit
+0,LD-003,TRK-003,capacity; truck type; more than 150 km from origin; HAZ certification
+0,LD-003,TRK-004,rating below 3.0; capacity; truck type
+0,LD-003,TRK-006,capacity; truck type; HAZ certification; trip would breach 14-hour daily limit
+0,LD-003,TRK-007,capacity; truck type; more than 150 km from origin
+0,LD-003,TRK-008,capacity; truck type; more than 150 km from origin; HAZ certification
+0,LD-003,TRK-009,more than 150 km from origin
+0,LD-003,TRK-010,capacity; truck type; HAZ certification; trip would breach 14-hour daily limit
+0,LD-003,TRK-011,capacity; truck type; more than 150 km from origin; HAZ certification; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-004,TRK-001,capacity; truck type; more than 150 km from origin
+0,LD-004,TRK-002,unknown truck-origin distance
+0,LD-004,TRK-003,capacity; truck type; unknown truck-origin distance
+0,LD-004,TRK-004,rating below 3.0; capacity; truck type; more than 150 km from origin
+0,LD-004,TRK-005,more than 150 km from origin
+0,LD-004,TRK-006,capacity; truck type; more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-004,TRK-009,truck type
+0,LD-004,TRK-010,capacity; truck type; more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-004,TRK-011,capacity; truck type; trip would breach 14-hour daily limit
+0,LD-005,TRK-002,truck type
+0,LD-005,TRK-003,more than 150 km from origin
+0,LD-005,TRK-004,rating below 3.0
+0,LD-005,TRK-005,truck type
+0,LD-005,TRK-007,truck type; more than 150 km from origin
+0,LD-005,TRK-008,truck type; more than 150 km from origin
+0,LD-005,TRK-009,truck type; more than 150 km from origin
+0,LD-005,TRK-010,trip would breach 14-hour daily limit
+0,LD-005,TRK-011,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer
+0,LD-006,TRK-001,capacity; truck type; more than 150 km from origin; oversize length
+0,LD-006,TRK-002,capacity; truck type; unknown truck-origin distance; oversize length
+0,LD-006,TRK-003,capacity; truck type; unknown truck-origin distance; oversize length
+0,LD-006,TRK-004,rating below 3.0; capacity; truck type; more than 150 km from origin; oversize length
+0,LD-006,TRK-005,capacity; truck type; more than 150 km from origin; oversize length
+0,LD-006,TRK-006,capacity; truck type; more than 150 km from origin; oversize length; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-006,TRK-007,capacity; truck type; oversize length
+0,LD-006,TRK-008,capacity; truck type; oversize length
+0,LD-006,TRK-010,capacity; truck type; more than 150 km from origin; oversize length; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-006,TRK-011,capacity; truck type; oversize length; trip would breach 14-hour daily limit
+0,LD-007,TRK-002,trip would breach 14-hour daily limit
+0,LD-007,TRK-003,more than 150 km from origin
+0,LD-007,TRK-004,rating below 3.0
+0,LD-007,TRK-005,truck type
+0,LD-007,TRK-006,capacity; truck type; trip would breach 14-hour daily limit
+0,LD-007,TRK-007,more than 150 km from origin
+0,LD-007,TRK-008,more than 150 km from origin
+0,LD-007,TRK-009,truck type; more than 150 km from origin
+0,LD-007,TRK-010,trip would breach 14-hour daily limit
+0,LD-007,TRK-011,capacity; truck type; more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-008,TRK-001,more than 150 km from origin
+0,LD-008,TRK-002,unknown truck-origin distance
+0,LD-008,TRK-004,rating below 3.0; more than 150 km from origin
+0,LD-008,TRK-005,truck type; more than 150 km from origin
+0,LD-008,TRK-006,capacity; truck type; more than 150 km from origin; trip would breach 14-hour daily limit
+0,LD-008,TRK-007,unknown truck-origin distance
+0,LD-008,TRK-008,unknown truck-origin distance
+0,LD-008,TRK-009,truck type; unknown truck-origin distance
+0,LD-008,TRK-010,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-008,TRK-011,capacity; truck type; unknown truck-origin distance
+0,LD-009,TRK-001,more than 150 km from origin
+0,LD-009,TRK-002,unknown truck-origin distance
+0,LD-009,TRK-004,rating below 3.0; more than 150 km from origin
+0,LD-009,TRK-005,truck type; more than 150 km from origin
+0,LD-009,TRK-006,capacity; truck type; more than 150 km from origin
+0,LD-009,TRK-007,unknown truck-origin distance
+0,LD-009,TRK-008,unknown truck-origin distance
+0,LD-009,TRK-009,truck type; unknown truck-origin distance
+0,LD-009,TRK-010,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-009,TRK-011,capacity; truck type; unknown truck-origin distance
+0,LD-010,TRK-001,more than 150 km from origin
+0,LD-010,TRK-002,unknown truck-origin distance
+0,LD-010,TRK-004,rating below 3.0; more than 150 km from origin
+0,LD-010,TRK-005,truck type; more than 150 km from origin
+0,LD-010,TRK-006,capacity; truck type; more than 150 km from origin
+0,LD-010,TRK-007,unknown truck-origin distance
+0,LD-010,TRK-008,unknown truck-origin distance
+0,LD-010,TRK-009,truck type; unknown truck-origin distance
+0,LD-010,TRK-010,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-010,TRK-011,capacity; truck type; unknown truck-origin distance
+0,LD-011,TRK-001,more than 150 km from origin
+0,LD-011,TRK-002,unknown truck-origin distance
+0,LD-011,TRK-004,rating below 3.0; more than 150 km from origin
+0,LD-011,TRK-005,truck type; more than 150 km from origin
+0,LD-011,TRK-006,capacity; truck type; more than 150 km from origin
+0,LD-011,TRK-007,unknown truck-origin distance
+0,LD-011,TRK-008,unknown truck-origin distance
+0,LD-011,TRK-009,truck type; unknown truck-origin distance
+0,LD-011,TRK-010,more than 150 km from origin; insufficient hours for travel to origin plus 2-hour buffer; trip would breach 14-hour daily limit
+0,LD-011,TRK-011,capacity; truck type; unknown truck-origin distance

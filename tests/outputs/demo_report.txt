@@ -1,0 +1,51 @@
+T069-PS-099 FREIGHT EXCHANGE ENGINE REPORT
+============================================================
+Clock (minutes): 0
+Shippers: 2 | Carriers: 4 | Trucks: 6 | Loads: 1 | Trips: 1
+
+1. DYNAMIC PRICE BREAKDOWNS
+------------------------------------------------------------
+LD-001 (Bengaluru -> Chennai, 17FT, GENERAL): km=350 (billable=350), base=Rs 8400, ratio=0.50, surge=0%, backhaul=0%, poor=0%, material=0%, recommended=Rs 8400
+
+2. MATCHING & EVENT LOG
+------------------------------------------------------------
+CYCLE 0 LOAD LD-001 PRICE Rs 8400
+ REJECT TRK-002: trip would breach 14-hour daily limit
+ REJECT TRK-003: more than 150 km from origin
+ REJECT TRK-004: rating below 3.0
+ REJECT TRK-005: truck type, more than 150 km from origin
+ REJECT TRK-006: capacity, truck type
+ OFFER LD-001 -> TRK-001; response deadline 30
+ ACCEPTED LD-001 by TRK-001
+ EVENT TRIP-LD-001: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-001: LOADED -> LOADED
+ EVENT TRIP-LD-001: IN_TRANSIT -> IN_TRANSIT
+ EVENT TRIP-LD-001: DELIVERED -> DELIVERED
+ EVENT TRIP-LD-001: SETTLE -> SETTLED
+
+3. TRIP SETTLEMENTS
+------------------------------------------------------------
+TRIP-LD-001: state=SETTLED | load=LD-001 | truck=TRK-001 | carrier=CAR-001 | agreed=Rs 8400
+  base_price: 8400
+  freight: 8400
+  surge_and_other_adjustments: 0
+  pickup_detention_hours: 1
+  delivery_detention_hours: 0
+  pickup_detention: 500
+  delivery_detention: 0
+  detention_total: 500
+  toll: 500
+  platform_fee: 504
+  carrier_gross: 9400
+  tds: 0
+  carrier_payout: 8896
+  gst: 420
+  shipper_invoice: 9820
+  rcm_flag: True
+
+4. CARRIER RATINGS & CUMULATIVE PAYOUTS
+------------------------------------------------------------
+CAR-001 (SouthLine Logistics): rating=4.65, annual_payout=Rs 8896, second_driver=True
+CAR-002 (Rapid Freight): rating=4.2, annual_payout=Rs 0, second_driver=False
+CAR-003 (Budget Carriers): rating=3.7, annual_payout=Rs 0, second_driver=False
+CAR-004 (Low Rated Transport): rating=2.8, annual_payout=Rs 0, second_driver=False

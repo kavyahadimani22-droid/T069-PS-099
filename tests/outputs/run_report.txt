@@ -1,0 +1,302 @@
+T069-PS-099 FREIGHT EXCHANGE ENGINE REPORT
+============================================================
+Clock (minutes): 90
+Shippers: 4 | Carriers: 5 | Trucks: 11 | Loads: 11 | Trips: 11
+
+1. DYNAMIC PRICE BREAKDOWNS
+------------------------------------------------------------
+LD-001 (Bengaluru -> Chennai, 17FT, GENERAL): km=350 (billable=350), base=Rs 8400, ratio=0.67, surge=0%, backhaul=-8.00%, poor=0%, material=0%, recommended=Rs 7728
+LD-002 (Mumbai -> Pune, LCV, PERISHABLE): km=150 (billable=150), base=Rs 2700, ratio=1.00, surge=0%, backhaul=0%, poor=0%, material=10.00%, recommended=Rs 2970
+LD-003 (Bengaluru -> Delhi, 32FT_MXL, HAZARDOUS): km=2150 (billable=2150), base=Rs 96750, ratio=1.00, surge=0%, backhaul=0%, poor=12.00%, material=15.00%, recommended=Rs 122873
+LD-004 (Mumbai -> Bengaluru, 22FT, GENERAL): km=980 (billable=980), base=Rs 31360, ratio=0.50, surge=0%, backhaul=0%, poor=0%, material=0%, recommended=Rs 31360
+LD-005 (Bengaluru -> Mysuru, LCV, GENERAL): km=145 (billable=150), base=Rs 2700, ratio=1.00, surge=0%, backhaul=0%, poor=0%, material=0%, recommended=Rs 2700
+LD-006 (Pune -> Hyderabad, TRAILER, OVERSIZE): km=560 (billable=560), base=Rs 33600, ratio=1.00, surge=0%, backhaul=0%, poor=0%, material=0%, recommended=Rs 33600
+LD-007 (Bengaluru -> Hyderabad, 17FT, GENERAL): km=570 (billable=570), base=Rs 13680, ratio=0.67, surge=0%, backhaul=0%, poor=0%, material=0%, recommended=Rs 13680
+LD-008 (Chennai -> Coimbatore, 17FT, GENERAL): km=500 (billable=500), base=Rs 12000, ratio=4.00, surge=20.00%, backhaul=0%, poor=12.00%, material=0%, recommended=Rs 15840
+LD-009 (Chennai -> Bengaluru, 17FT, GENERAL): km=350 (billable=350), base=Rs 8400, ratio=4.00, surge=20.00%, backhaul=0%, poor=0%, material=0%, recommended=Rs 10080
+LD-010 (Chennai -> Bengaluru, 17FT, GENERAL): km=350 (billable=350), base=Rs 8400, ratio=4.00, surge=20.00%, backhaul=0%, poor=0%, material=0%, recommended=Rs 10080
+LD-011 (Chennai -> Bengaluru, 17FT, GENERAL): km=350 (billable=350), base=Rs 8400, ratio=4.00, surge=20.00%, backhaul=0%, poor=0%, material=0%, recommended=Rs 10080
+
+2. MATCHING & EVENT LOG
+------------------------------------------------------------
+CYCLE 0 LOAD LD-001 PRICE Rs 7728
+ REJECT TRK-003: more than 150 km from origin
+ REJECT TRK-004: rating below 3.0
+ REJECT TRK-005: truck type
+ REJECT TRK-006: capacity, truck type
+ REJECT TRK-007: more than 150 km from origin
+ REJECT TRK-008: more than 150 km from origin
+ REJECT TRK-009: truck type, more than 150 km from origin
+ REJECT TRK-010: trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer
+ OFFER LD-001 -> TRK-001; response deadline 30
+CYCLE 0 LOAD LD-002 PRICE Rs 2970
+ REJECT TRK-001: more than 150 km from origin
+ REJECT TRK-002: truck type, unknown truck-origin distance
+ REJECT TRK-003: unknown truck-origin distance
+ REJECT TRK-004: rating below 3.0, more than 150 km from origin
+ REJECT TRK-005: truck type, more than 150 km from origin
+ REJECT TRK-006: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer
+ REJECT TRK-007: truck type
+ REJECT TRK-008: truck type
+ REJECT TRK-009: truck type
+ REJECT TRK-010: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ OFFER LD-002 -> TRK-011; response deadline 30
+CYCLE 0 LOAD LD-003 PRICE Rs 122873
+ REJECT TRK-001: capacity, truck type
+ REJECT TRK-002: capacity, truck type, HAZ certification, trip would breach 14-hour daily limit
+ REJECT TRK-003: capacity, truck type, more than 150 km from origin, HAZ certification
+ REJECT TRK-004: rating below 3.0, capacity, truck type
+ REJECT TRK-006: capacity, truck type, HAZ certification, trip would breach 14-hour daily limit
+ REJECT TRK-007: capacity, truck type, more than 150 km from origin
+ REJECT TRK-008: capacity, truck type, more than 150 km from origin, HAZ certification
+ REJECT TRK-009: more than 150 km from origin
+ REJECT TRK-010: capacity, truck type, HAZ certification, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, more than 150 km from origin, HAZ certification, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ OFFER LD-003 -> TRK-005; response deadline 30
+CYCLE 0 LOAD LD-004 PRICE Rs 31360
+ REJECT TRK-001: capacity, truck type, more than 150 km from origin
+ REJECT TRK-002: unknown truck-origin distance
+ REJECT TRK-003: capacity, truck type, unknown truck-origin distance
+ REJECT TRK-004: rating below 3.0, capacity, truck type, more than 150 km from origin
+ REJECT TRK-005: more than 150 km from origin
+ REJECT TRK-006: capacity, truck type, more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-009: truck type
+ REJECT TRK-010: capacity, truck type, more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, trip would breach 14-hour daily limit
+ OFFER LD-004 -> TRK-007; response deadline 30
+CYCLE 0 LOAD LD-005 PRICE Rs 2700
+ REJECT TRK-002: truck type
+ REJECT TRK-003: more than 150 km from origin
+ REJECT TRK-004: rating below 3.0
+ REJECT TRK-005: truck type
+ REJECT TRK-007: truck type, more than 150 km from origin
+ REJECT TRK-008: truck type, more than 150 km from origin
+ REJECT TRK-009: truck type, more than 150 km from origin
+ REJECT TRK-010: trip would breach 14-hour daily limit
+ REJECT TRK-011: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer
+ OFFER LD-005 -> TRK-001; response deadline 30
+CYCLE 0 LOAD LD-006 PRICE Rs 33600
+ REJECT TRK-001: capacity, truck type, more than 150 km from origin, oversize length
+ REJECT TRK-002: capacity, truck type, unknown truck-origin distance, oversize length
+ REJECT TRK-003: capacity, truck type, unknown truck-origin distance, oversize length
+ REJECT TRK-004: rating below 3.0, capacity, truck type, more than 150 km from origin, oversize length
+ REJECT TRK-005: capacity, truck type, more than 150 km from origin, oversize length
+ REJECT TRK-006: capacity, truck type, more than 150 km from origin, oversize length, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-007: capacity, truck type, oversize length
+ REJECT TRK-008: capacity, truck type, oversize length
+ REJECT TRK-010: capacity, truck type, more than 150 km from origin, oversize length, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, oversize length, trip would breach 14-hour daily limit
+ OFFER LD-006 -> TRK-009; response deadline 30
+CYCLE 0 LOAD LD-007 PRICE Rs 13680
+ REJECT TRK-002: trip would breach 14-hour daily limit
+ REJECT TRK-003: more than 150 km from origin
+ REJECT TRK-004: rating below 3.0
+ REJECT TRK-005: truck type
+ REJECT TRK-006: capacity, truck type, trip would breach 14-hour daily limit
+ REJECT TRK-007: more than 150 km from origin
+ REJECT TRK-008: more than 150 km from origin
+ REJECT TRK-009: truck type, more than 150 km from origin
+ REJECT TRK-010: trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ OFFER LD-007 -> TRK-001; response deadline 30
+CYCLE 0 LOAD LD-008 PRICE Rs 15840
+ REJECT TRK-001: more than 150 km from origin
+ REJECT TRK-002: unknown truck-origin distance
+ REJECT TRK-004: rating below 3.0, more than 150 km from origin
+ REJECT TRK-005: truck type, more than 150 km from origin
+ REJECT TRK-006: capacity, truck type, more than 150 km from origin, trip would breach 14-hour daily limit
+ REJECT TRK-007: unknown truck-origin distance
+ REJECT TRK-008: unknown truck-origin distance
+ REJECT TRK-009: truck type, unknown truck-origin distance
+ REJECT TRK-010: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, unknown truck-origin distance
+ OFFER LD-008 -> TRK-003; response deadline 30
+CYCLE 0 LOAD LD-009 PRICE Rs 10080
+ REJECT TRK-001: more than 150 km from origin
+ REJECT TRK-002: unknown truck-origin distance
+ REJECT TRK-004: rating below 3.0, more than 150 km from origin
+ REJECT TRK-005: truck type, more than 150 km from origin
+ REJECT TRK-006: capacity, truck type, more than 150 km from origin
+ REJECT TRK-007: unknown truck-origin distance
+ REJECT TRK-008: unknown truck-origin distance
+ REJECT TRK-009: truck type, unknown truck-origin distance
+ REJECT TRK-010: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, unknown truck-origin distance
+ OFFER LD-009 -> TRK-003; response deadline 30
+CYCLE 0 LOAD LD-010 PRICE Rs 10080
+ REJECT TRK-001: more than 150 km from origin
+ REJECT TRK-002: unknown truck-origin distance
+ REJECT TRK-004: rating below 3.0, more than 150 km from origin
+ REJECT TRK-005: truck type, more than 150 km from origin
+ REJECT TRK-006: capacity, truck type, more than 150 km from origin
+ REJECT TRK-007: unknown truck-origin distance
+ REJECT TRK-008: unknown truck-origin distance
+ REJECT TRK-009: truck type, unknown truck-origin distance
+ REJECT TRK-010: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, unknown truck-origin distance
+ OFFER LD-010 -> TRK-003; response deadline 30
+CYCLE 0 LOAD LD-011 PRICE Rs 10080
+ REJECT TRK-001: more than 150 km from origin
+ REJECT TRK-002: unknown truck-origin distance
+ REJECT TRK-004: rating below 3.0, more than 150 km from origin
+ REJECT TRK-005: truck type, more than 150 km from origin
+ REJECT TRK-006: capacity, truck type, more than 150 km from origin
+ REJECT TRK-007: unknown truck-origin distance
+ REJECT TRK-008: unknown truck-origin distance
+ REJECT TRK-009: truck type, unknown truck-origin distance
+ REJECT TRK-010: more than 150 km from origin, insufficient hours for travel to origin plus 2-hour buffer, trip would breach 14-hour daily limit
+ REJECT TRK-011: capacity, truck type, unknown truck-origin distance
+ OFFER LD-011 -> TRK-003; response deadline 30
+ ACCEPTED LD-001 by TRK-001
+ ACCEPTED LD-002 by TRK-011
+ ACCEPTED LD-003 by TRK-005
+ ACCEPTED LD-004 by TRK-007
+ ACCEPTED LD-005 by TRK-001
+ ACCEPTED LD-006 by TRK-009
+ ACCEPTED LD-007 by TRK-001
+ ACCEPTED LD-008 by TRK-003
+ COUNTER TRIP-LD-004 Rs 33869: SHIPPER_DECISION_REQUIRED
+ OFFER TIMEOUT TRIP-LD-009
+ EXHAUSTED OFFERS for LD-009
+ OFFER TIMEOUT TRIP-LD-010
+ EXHAUSTED OFFERS for LD-010
+ OFFER TIMEOUT TRIP-LD-011
+ EXHAUSTED OFFERS for LD-011
+ EVENT TRIP-LD-005: CANCEL_SHIPPER -> CANCELLED
+ EVENT TRIP-LD-007: CANCEL_CARRIER -> CANCELLED
+ EVENT TRIP-LD-006: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-006: ABORT -> ABORTED
+ EVENT TRIP-LD-001: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-001: LOADED -> LOADED
+ EVENT TRIP-LD-001: IN_TRANSIT -> IN_TRANSIT
+ EVENT TRIP-LD-001: DELIVERED -> DELIVERED
+ EVENT TRIP-LD-001: SETTLE -> SETTLED
+ EVENT TRIP-LD-002: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-002: LOADED -> LOADED
+ EVENT TRIP-LD-002: IN_TRANSIT -> IN_TRANSIT
+ EVENT TRIP-LD-002: DELIVERED -> DELIVERED
+ EVENT TRIP-LD-002: SETTLE -> SETTLED
+ EVENT TRIP-LD-003: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-003: LOADED -> LOADED
+ EVENT TRIP-LD-003: IN_TRANSIT -> IN_TRANSIT
+ EVENT TRIP-LD-003: DELIVERED -> DELIVERED
+ EVENT TRIP-LD-003: SETTLE -> SETTLED
+ EVENT TRIP-LD-004: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-004: LOADED -> LOADED
+ EVENT TRIP-LD-004: IN_TRANSIT -> IN_TRANSIT
+ EVENT TRIP-LD-004: DELIVERED -> DELIVERED
+ EVENT TRIP-LD-004: SETTLE -> SETTLED
+ EVENT TRIP-LD-008: AT_PICKUP -> AT_PICKUP
+ EVENT TRIP-LD-008: LOADED -> LOADED
+ EVENT TRIP-LD-008: IN_TRANSIT -> IN_TRANSIT
+ EVENT TRIP-LD-008: DELIVERED -> DELIVERED
+ EVENT TRIP-LD-008: SETTLE -> SETTLED
+
+3. TRIP SETTLEMENTS
+------------------------------------------------------------
+TRIP-LD-001: state=SETTLED | load=LD-001 | truck=TRK-001 | carrier=CAR-001 | agreed=Rs 7728
+  base_price: 8400
+  freight: 7728
+  surge_and_other_adjustments: -672
+  pickup_detention_hours: 1
+  delivery_detention_hours: 0
+  pickup_detention: 500
+  delivery_detention: 0
+  detention_total: 500
+  toll: 770
+  platform_fee: 504
+  carrier_gross: 8998
+  tds: 0
+  carrier_payout: 8494
+  gst: 386
+  shipper_invoice: 9384
+  rcm_flag: True
+TRIP-LD-002: state=SETTLED | load=LD-002 | truck=TRK-011 | carrier=CAR-002 | agreed=Rs 2970
+  base_price: 2700
+  freight: 2970
+  surge_and_other_adjustments: 270
+  pickup_detention_hours: 0
+  delivery_detention_hours: 0
+  pickup_detention: 0
+  delivery_detention: 0
+  detention_total: 0
+  toll: 250
+  platform_fee: 162
+  carrier_gross: 3220
+  tds: 31
+  carrier_payout: 3027
+  gst: 149
+  shipper_invoice: 3369
+  rcm_flag: False
+TRIP-LD-003: state=SETTLED | load=LD-003 | truck=TRK-005 | carrier=CAR-001 | agreed=Rs 122873
+  base_price: 96750
+  freight: 122873
+  surge_and_other_adjustments: 26123
+  pickup_detention_hours: 4
+  delivery_detention_hours: 0
+  pickup_detention: 3200
+  delivery_detention: 0
+  detention_total: 3200
+  toll: 3100
+  platform_fee: 5805
+  carrier_gross: 129173
+  tds: 1234
+  carrier_payout: 122134
+  gst: 6144
+  shipper_invoice: 135317
+  rcm_flag: True
+TRIP-LD-004: state=SETTLED | load=LD-004 | truck=TRK-007 | carrier=CAR-005 | agreed=Rs 33869
+  base_price: 31360
+  freight: 33869
+  surge_and_other_adjustments: 2509
+  pickup_detention_hours: 0
+  delivery_detention_hours: 2
+  pickup_detention: 0
+  delivery_detention: 1000
+  detention_total: 1000
+  toll: 1500
+  platform_fee: 1882
+  carrier_gross: 36369
+  tds: 345
+  carrier_payout: 34142
+  gst: 1693
+  shipper_invoice: 38062
+  rcm_flag: True
+TRIP-LD-005: state=CANCELLED | load=LD-005 | truck=TRK-001 | carrier=CAR-001 | agreed=Rs 2700
+  cancellation_fee: Rs 1000
+  cancel_reason: SHIPPER_CANCELLED
+TRIP-LD-006: state=ABORTED | load=LD-006 | truck=TRK-009 | carrier=CAR-005 | agreed=Rs 33600
+  detention: 38400
+  abort_base_compensation: 16800
+TRIP-LD-007: state=CANCELLED | load=LD-007 | truck=TRK-001 | carrier=CAR-001 | agreed=Rs 13680
+  cancellation_fee: Rs 2000
+  cancel_reason: CARRIER_CANCELLED
+TRIP-LD-008: state=SETTLED | load=LD-008 | truck=TRK-003 | carrier=CAR-003 | agreed=Rs 15840
+  base_price: 12000
+  freight: 15840
+  surge_and_other_adjustments: 3840
+  pickup_detention_hours: 0
+  delivery_detention_hours: 0
+  pickup_detention: 0
+  delivery_detention: 0
+  detention_total: 0
+  toll: 800
+  platform_fee: 720
+  carrier_gross: 16640
+  tds: 0
+  carrier_payout: 15920
+  gst: 792
+  shipper_invoice: 17432
+  rcm_flag: True
+TRIP-LD-009: state=MATCHED | load=LD-009 | truck=TRK-003 | carrier=CAR-003 | agreed=Rs 10080
+TRIP-LD-010: state=MATCHED | load=LD-010 | truck=TRK-003 | carrier=CAR-003 | agreed=Rs 10080
+TRIP-LD-011: state=MATCHED | load=LD-011 | truck=TRK-003 | carrier=CAR-003 | agreed=Rs 10080
+
+4. CARRIER RATINGS & CUMULATIVE PAYOUTS
+------------------------------------------------------------
+CAR-001 (SouthLine Logistics): rating=4.50, annual_payout=Rs 130628, second_driver=True
+CAR-002 (Rapid Freight): rating=4.25, annual_payout=Rs 101027, second_driver=False
+CAR-003 (Budget Carriers): rating=3.75, annual_payout=Rs 27920, second_driver=True
+CAR-004 (Low Rated Transport): rating=2.8, annual_payout=Rs 0, second_driver=True
+CAR-005 (Metro Hazmat Movers): rating=4.7, annual_payout=Rs 79142, second_driver=True

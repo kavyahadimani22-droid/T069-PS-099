@@ -1,0 +1,12 @@
+{"seq": 1, "op": "REGISTER_SHIPPER", "status": "OK", "id": "SHP-DEMO"}
+{"seq": 2, "op": "REGISTER_CARRIER", "status": "OK", "id": "CAR-DEMO"}
+{"seq": 3, "op": "REGISTER_TRUCK", "status": "OK", "id": "TRK-DEMO"}
+{"seq": 4, "op": "POST_LOAD", "status": "OK", "id": "LD-DEMO", "recommended_price": "31360"}
+{"seq": 5, "op": "MATCH", "status": "OK", "minute": 0}
+{"seq": 6, "op": "ACCEPT", "status": "ACCEPTED", "load_id": "LD-DEMO"}
+{"seq": 7, "op": "COUNTER", "status": "AUTO_ACCEPTED", "trip_id": "TRIP-LD-DEMO"}
+{"seq": 8, "op": "EVENT", "status": "OK", "trip_id": "TRIP-LD-DEMO", "state": "AT_PICKUP"}
+{"seq": 9, "op": "EVENT", "status": "OK", "trip_id": "TRIP-LD-DEMO", "state": "LOADED"}
+{"seq": 10, "op": "EVENT", "status": "OK", "trip_id": "TRIP-LD-DEMO", "state": "IN_TRANSIT"}
+{"seq": 11, "op": "EVENT", "status": "OK", "trip_id": "TRIP-LD-DEMO", "state": "DELIVERED"}
+{"seq": 12, "op": "EVENT", "status": "OK", "trip_id": "TRIP-LD-DEMO", "state": "SETTLED"}

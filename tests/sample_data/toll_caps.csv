@@ -1,0 +1,7 @@
+origin,destination,cap_amount
+Bengaluru,Chennai,700
+Chennai,Bengaluru,700
+Mumbai,Pune,300
+Bengaluru,Delhi,3200
+Mumbai,Bengaluru,1400
+Chennai,Coimbatore,850

@@ -1,0 +1,9 @@
+[
+  {"op": "MATCH"},
+  {"op": "ACCEPT", "load_id": "LD-001"},
+  {"op": "EVENT", "trip_id": "TRIP-LD-001", "event": "AT_PICKUP"},
+  {"op": "EVENT", "trip_id": "TRIP-LD-001", "event": "LOADED"},
+  {"op": "EVENT", "trip_id": "TRIP-LD-001", "event": "IN_TRANSIT"},
+  {"op": "EVENT", "trip_id": "TRIP-LD-001", "event": "DELIVERED", "data": {"late_hours": 0}},
+  {"op": "EVENT", "trip_id": "TRIP-LD-001", "event": "SETTLE", "data": {"toll_actual": 500, "pickup_detention_hours": 7, "delivery_detention_hours": 6}}
+]

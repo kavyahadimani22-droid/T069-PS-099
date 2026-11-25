@@ -1,0 +1,12 @@
+id,carrier_id,truck_type,capacity_tonnes,length_ft,city,available_from,hours_used,haz_certified,active
+TRK-001,CAR-001,17FT,8,17,Bengaluru,0,5,true,true
+TRK-002,CAR-002,22FT,14,22,Mysuru,0,2,false,true
+TRK-003,CAR-003,17FT,7,17,Chennai,0,3,false,true
+TRK-004,CAR-004,17FT,10,17,Bengaluru,0,2,true,true
+TRK-005,CAR-001,32FT_MXL,25,32,Bengaluru,0,4,true,true
+TRK-006,CAR-002,LCV,3,10,Bengaluru,0,3,false,true
+TRK-007,CAR-005,22FT,15,22,Mumbai,0,2,true,true
+TRK-008,CAR-003,22FT,14,22,Pune,0,1,false,true
+TRK-009,CAR-005,TRAILER,35,40,Pune,0,2,true,true
+TRK-010,CAR-002,17FT,8,17,Bengaluru,0,12,false,true
+TRK-011,CAR-002,LCV,3,10,Mumbai,0,2,false,true
