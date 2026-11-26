@@ -140,3 +140,26 @@ python run_commands.py examples/commands_full_lifecycle.jsonl --output outputs/c
 - [5-Minute Demo Guide](docs/demo_guide.md)
 - [Command File Format](docs/command_file_format.md)
 - [Diagrams (ER, Class, State, Sequence)](docs/diagrams/er_diagram.md)
+
+
+## 5. Project Demonstration Video
+Five-minute project demonstration
+https://drive.google.com/file/d/1vqQKQh_j0kcsUhwmoIoT99808ZhtNyEZ/view?usp=drivesdk
+
+The demonstration covers:
+
+Project introduction and problem statement
+System architecture
+Official sample-pack execution
+Generated CSV output files
+Automated testing and validation results
+Project conclusion
+
+## 6. Repository Information
+Project:Freight Exchange Load Matching and Dynamic Truck Pricing Engine
+
+Problem Statement ID: PS-099
+
+Team ID: T069
+
+GitHub Repository:
